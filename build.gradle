@@ -19,11 +19,15 @@ dependencies {
 
     //lombok
     implementation('org.projectlombok:lombok')
+    testImplementation 'org.testng:testng:7.1.0'
     annotationProcessor('org.projectlombok:lombok')
     testImplementation('org.projectlombok:lombok')
     testAnnotationProcessor('org.projectlombok:lombok')
 
     testImplementation('org.springframework.boot:spring-boot-starter-test')
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation('org.com.h2database:h2')
+
 }
 
 test {
